@@ -13,6 +13,7 @@ CustomerDatabaseManagement\controller\BaseResponse.class
 CustomerDatabaseManagement\entity\Customer.class
 CustomerDatabaseManagement\Constants.class
 CustomerDatabaseManagement\entity\CustomerOrder.class
+CustomerDatabaseManagement\Auditable.class
 CustomerDatabaseManagement\repository\CustomerMarketRepository.class
 CustomerDatabaseManagement\config\WebConfig.class
 CustomerDatabaseManagement\dto\CustomerContactDTO.class

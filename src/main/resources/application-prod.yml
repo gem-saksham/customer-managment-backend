@@ -1,20 +1,20 @@
-spring:
-  datasource:
-    url: jdbc:mysql://localhost:3306/customerdb_prod
-    username: prod_user
-    password: prod_password
-    driver-class-name: com.mysql.cj.jdbc.Driver
-
-  jpa:
-    hibernate:
-      ddl-auto: none # Avoid automatic schema updates in production
-    show-sql: false
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MySQL8Dialect
-  main:
-    allow-bean-definition-overriding: true
-
-logging:
-  level:
-    root: warn
+#spring:
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/customerdb_prod
+#    username: prod_user
+#    password: prod_password
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: none # Avoid automatic schema updates in production
+#    show-sql: false
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.MySQL8Dialect
+#  main:
+#    allow-bean-definition-overriding: true
+#
+#logging:
+#  level:
+#    root: warn
