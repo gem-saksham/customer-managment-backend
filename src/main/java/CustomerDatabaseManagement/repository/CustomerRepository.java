@@ -12,5 +12,7 @@ import java.util.Optional;
 public interface CustomerRepository extends JpaRepository<Customer, Long> { // Change Integer to Long if necessary
     Optional<Customer> findByCustomerNameOrOfficialEmailOrGstNo(String customerName, String officialEmail, String gstNo);
 
+    Optional<Customer> findByCustomerNameOrOfficialEmail(String customerName, String officialEmail);
+
     Page<Customer> findByCustomerNameContainingOrOfficialEmailContainingOrCustomerAbbreviationContainingOrStateContainingOrCountryContainingOrCityContaining(String customerName, String officialEmail, String customerAbbreviation , String state, String country, String city ,  Pageable pageable);
 }

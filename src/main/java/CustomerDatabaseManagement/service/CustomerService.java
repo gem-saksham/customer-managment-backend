@@ -59,8 +59,8 @@ public class CustomerService {
 
     // Existing POST Methods
     public BaseResponse addCustomer(CustomerDTO customerDTO) {
-        Optional<Customer> existingCustomer = customerRepository.findByCustomerNameOrOfficialEmailOrGstNo(
-                customerDTO.getCustomerName(), customerDTO.getOfficialEmail(), customerDTO.getGstNo());
+        Optional<Customer> existingCustomer = customerRepository.findByCustomerNameOrOfficialEmail(
+                customerDTO.getCustomerName(), customerDTO.getOfficialEmail());
 
         if (existingCustomer.isPresent()) {
             return new BaseResponse("Customer already exists", HttpStatus.CONFLICT, null);

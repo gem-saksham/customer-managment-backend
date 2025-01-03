@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://dpg-cskrm7rv2p9s73aagsu0-a.oregon-postgres.render.com/customerdb_crsc
-    username: customerdb_crsc_user  # Update with your PostgreSQL username
-    password: PO8nqJooFnbM4Bx19BRIwnn15V57NgYG    # Update with your PostgreSQL password
+    url:
+    username:  # Update with your PostgreSQL username
+    password:   # Update with your PostgreSQL password
     driver-class-name: org.postgresql.Driver
 
   jpa:
